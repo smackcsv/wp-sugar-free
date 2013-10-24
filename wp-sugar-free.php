@@ -3,7 +3,7 @@
 *Plugin Name: WP Sugar free
 *Plugin URI: http://www.smackcoders.com
 *Description: Easy Lead capture Sugar Webforms and Contacts synchronization
-*Version: 1.0.0
+*Version: 1.0.1
 *Author: smackcoders.com
 *Author URI: http://www.smackcoders.com
 *
@@ -88,7 +88,7 @@ function wpsugarfree_rightContent(){
 		<div class="wpsugarfree-box-inside wpsugarfree-plugin-details">
 		<table>	<tbody>
 		<tr><td><b>Plugin Name</b></td><td>WP Sugar Free</td></tr>
-		<tr><td><b>Version</b></td><td>1.0.0 <a style="text-decoration:none" href="http://www.smackcoders.com/free-wordpress-sugar-integration-advanced-web-form-generator-plugin.html" target="_blank">( Update Now )</a></td></tr>
+		<tr><td><b>Version</b></td><td>1.0.1 <a style="text-decoration:none" href="http://www.smackcoders.com/free-wordpress-sugar-integration-advanced-web-form-generator-plugin.html" target="_blank">( Update Now )</a></td></tr>
 		</tbody></table>
 		<div class="company-detials" id="company-detials">
 		<div class="wpsugarfree-rateus"><img width="70px" height="40px" style="margin-top:10px;" src="'.WP_CONTENT_URL.'/plugins/wp-sugar-free/images/SubscribeViaEmail.gif"><a style="margin-left:15px;margin-top:-10px;" class="dash-action" target="_blank" href="http://www.smackcoders.com/free-wordpress-sugar-integration-advanced-web-form-generator-plugin.html">Rate Us</a></div>

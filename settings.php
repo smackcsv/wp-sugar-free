@@ -1,4 +1,4 @@
-<?
+<?php
 function wp_sugar_free_plugin_settings() {
 	$siteurl = site_url ();
 	$config = get_option ( 'smack_wp_sugar_free_settings' );

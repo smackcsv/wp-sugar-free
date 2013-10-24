@@ -1,10 +1,10 @@
 === Free WordPress Sugar Integration Advanced Multi Web Forms Creator ===
 Contributors: smackcoders
 Tags: crm, admin, administration, automatic, contact, form, list, newsletter, plugin, shortcode, sidebar, widget, widgets, wordpress, crm, Sugar, lead, wp Sugar
-Requires at least: 3.5
+Requires at least: 3.4
 Tested up to: 3.5.2
-Stable tag: 1.0.0
-Version: 1.0.0
+Stable tag: 1.0.1
+Version: 1.0.1
 Author: smackcoders
 Donate link: http://www.smackcoders.com/donate.html
 License: GPLv2 or later
@@ -65,6 +65,9 @@ Kindly click here to read more about [WP Sugar Pro features and live demo](http:
  
 == Changelog ==
 
+= 1.0.1 =
+
+Minor bug fixed, must upgrade on activation error
 
 = 1.0.0 =
 
@@ -73,7 +76,12 @@ This is Initial basic version. Written over wp-tiger
 
 == Upgrade Notice ==
 
+= 1.0.1 =
+
+Php short tags issue solved.
+
 = 1.0.0 =
+
 Initial release.
 
 == Frequently Asked Questions ==
