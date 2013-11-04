@@ -1,6 +1,7 @@
 <?php
 
 function wp_sugar_free_listShortcodes(){
+	global $plugin_url_wp_sugar;
 ?>
 	<div class="sugar_free_upgradetopro" id="upgradetopro" style="display:none;">This feature is only available in Pro Version, Please <a href="http://www.smackcoders.com/wordpress-sugar-integration-automated-multi-web-forms-generator-pro.html">UPGRADE TO PRO</a></div>
         <table>
@@ -58,7 +59,7 @@ function wp_sugar_free_capture_wp_users(){ ?>
 <table>
         <tr>
                 <td><br/>
-                        <label><div style='float:left;padding-right: 5px;'>Sync New Registration to Sugar Crm Contacts </div> <div style='float:right;'>:</div> </label>
+                        <label><div style='float:left;padding-right: 5px;'>Sync New Registration to SugarCrm Contacts </div> <div style='float:right;'>:</div> </label>
                 </td>
                 <td><br/>
                         <input type='checkbox' class='smack-sugar-free-settings-user-capture' name='wp_sugar_free_smack_user_capture' id='wp_sugar_free_smack_user_capture' 
@@ -83,7 +84,7 @@ if($config['smack_capture_duplicates']=='on')
         echo "checked";
 }
 $contentUrl = WP_CONTENT_URL;
-$imagepath = $contentUrl.'/plugins/wp-sugar-free/images/'; 
+$imagepath = "{$plugin_url_wp_sugar}/images/"; 
 ?>
 >
                 </td>

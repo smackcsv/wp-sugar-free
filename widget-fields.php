@@ -1,7 +1,7 @@
 <?php
 /**
  * 
- * Function to get Sugar crm fields
+ * Function to get SugarCRM fields
  */
 function wp_sugar_free_widget_fields() {
 	if(!defined('sugarEntry') || !sugarEntry)

@@ -25,18 +25,25 @@ if (isset ( $_REQUEST ['check'] ) && $_REQUEST ['check'] == "testaccess")
         ),
         'application_name' => 'wp-sugar-pro');
 
+
         $login = $client->call('login',$user_auth);
         $session_id = $login['id'];
+	if(isset($login['id']))
+	{
+		$recordInfo = $client->call('get_module_fields', array('session' => $session_id, 'module_name' => 'Leads'));
 
-	$recordInfo = $client->call('get_module_fields', array('session' => $session_id, 'module_name' => 'Leads'));
-
-        if(isset($recordInfo['error']['number']) && is_array($recordInfo['error']) )
-        {
-                die("Please check the user name or password");
-        }
+		if(isset($recordInfo['error']['number']) && is_array($recordInfo['error']) )
+		{
+			die("Please check the user name or password");
+		}
+		else
+		{
+			die('Success');
+		}
+	}
 	else
 	{
-		die('Success');
+		die('Please check the credentials');
 	}
 }
 ?>

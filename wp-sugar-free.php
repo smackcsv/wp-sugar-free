@@ -3,7 +3,7 @@
 *Plugin Name: WP Sugar free
 *Plugin URI: http://www.smackcoders.com
 *Description: Easy Lead capture Sugar Webforms and Contacts synchronization
-*Version: 1.0.1
+*Version: 1.0.2
 *Author: smackcoders.com
 *Author URI: http://www.smackcoders.com
 *
@@ -25,6 +25,12 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 * @link http://www.smackcoders.com/blog/category/free-wordpress-plugins
 ***********************************************************************************************
 */
+
+global $plugin_url_wp_sugar ;
+$plugin_url_wp_sugar = plugins_url( '' , __FILE__ );
+global $plugin_dir_wp_sugar;
+$plugin_dir_wp_sugar = plugin_dir_path( __FILE__ );
+
 if(!defined('sugarEntry') || !sugarEntry)
 {
 	define('sugarEntry', TRUE);
@@ -54,12 +60,14 @@ register_deactivation_hook( __FILE__, 'wpsugarfree_deactivate' );
 
 // Admin menu settings
 function wpsugarfree() {
-	add_menu_page('WPSugarFree Settings', 'WP-Sugar-Free', 'manage_options', 'wp-sugar-free', 'wpsugarfree_settings', WP_CONTENT_URL."/plugins/wp-sugar-free/images/icon.png");
+	global $plugin_url_wp_sugar;
+	add_menu_page('WPSugarFree Settings', 'WP Sugar Free', 'manage_options', 'wp-sugar-free', 'wpsugarfree_settings', "{$plugin_url_wp_sugar}/images/icon.png");
 }
 
 function LoadWpSugarFreeScript() {
-	wp_enqueue_script("wp-sugar-free-script", "/wp-content/plugins/wp-sugar-free/js/smack-sugar-scripts.js", array("jquery"));
-	wp_enqueue_style("wp-sugar-free-css", site_url().'/wp-content/plugins/wp-sugar-free/css/smack-sugar-style.css');
+	global $plugin_url_wp_sugar;
+	wp_enqueue_script("wp-sugar-free-script", "{$plugin_url_wp_sugar}/js/smack-sugar-scripts.js", array("jquery"));
+	wp_enqueue_style("wp-sugar-free-css", "{$plugin_url_wp_sugar}/css/smack-sugar-style.css");
 }
 
 function wpsugarfree_deactivate()
@@ -84,6 +92,7 @@ function wpsugarfree_settings()
 }
 
 function wpsugarfree_rightContent(){
+	global $plugin_url_wp_sugar;
 	$rightContent = '<div class="wpsugarfree-plugindetail-box" id="wpsugarfree-pluginDetails"><h3>Plugin Details</h3>
 		<div class="wpsugarfree-box-inside wpsugarfree-plugin-details">
 		<table>	<tbody>
@@ -91,13 +100,13 @@ function wpsugarfree_rightContent(){
 		<tr><td><b>Version</b></td><td>1.0.1 <a style="text-decoration:none" href="http://www.smackcoders.com/free-wordpress-sugar-integration-advanced-web-form-generator-plugin.html" target="_blank">( Update Now )</a></td></tr>
 		</tbody></table>
 		<div class="company-detials" id="company-detials">
-		<div class="wpsugarfree-rateus"><img width="70px" height="40px" style="margin-top:10px;" src="'.WP_CONTENT_URL.'/plugins/wp-sugar-free/images/SubscribeViaEmail.gif"><a style="margin-left:15px;margin-top:-10px;" class="dash-action" target="_blank" href="http://www.smackcoders.com/free-wordpress-sugar-integration-advanced-web-form-generator-plugin.html">Rate Us</a></div>
+		<div class="wpsugarfree-rateus"><img width="70px" height="40px" style="margin-top:10px;" src="'.$plugin_url_wp_sugar.'/images/SubscribeViaEmail.gif"><a style="margin-left:15px;margin-top:-10px;" class="dash-action" target="_blank" href="http://www.smackcoders.com/free-wordpress-sugar-integration-advanced-web-form-generator-plugin.html">Rate Us</a></div>
 		<div class="sugar-free-sociallinks">
 		<label>Social Links :</label>
-		<span><a target="_blank" href="https://plus.google.com/106094602431590125432"><img src="'.WP_CONTENT_URL.'/plugins/wp-sugar-free/images/googleplus.png"></a></span>
-		<span><a target="_blank" href="https://www.facebook.com/smackcoders"><img src="'.WP_CONTENT_URL.'/plugins/wp-sugar-free/images/facebook.png"></a></span>
-		<span><a target="_blank" href="https://twitter.com/smackcoders"><img src="'.WP_CONTENT_URL.'/plugins/wp-sugar-free/images/twitter.png"></a></span>
-		<span><a target="_blank" href="http://www.linkedin.com/company/smackcoders"><img src="'.WP_CONTENT_URL.'/plugins/wp-sugar-free/images/linkedin.png"></a></span>
+		<span><a target="_blank" href="https://plus.google.com/106094602431590125432"><img src="'.$plugin_url_wp_sugar.'/images/googleplus.png"></a></span>
+		<span><a target="_blank" href="https://www.facebook.com/smackcoders"><img src="'.$plugin_url_wp_sugar.'/images/facebook.png"></a></span>
+		<span><a target="_blank" href="https://twitter.com/smackcoders"><img src="'.$plugin_url_wp_sugar.'/images/twitter.png"></a></span>
+		<span><a target="_blank" href="http://www.linkedin.com/company/smackcoders"><img src="'.$plugin_url_wp_sugar.'/images/linkedin.png"></a></span>
 		</div>
 		<div class="sugar-free-poweredby" id="poweredby"><a target="_blank" href="http://www.smackcoders.com/"><img src="http://www.smackcoders.com/wp-content/uploads/2012/09/Smack_poweredby_200.png"></a></div>
 		</div>

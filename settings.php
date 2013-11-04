@@ -25,11 +25,11 @@ function wp_sugar_free_plugin_settings() {
 					<h2>SugarCRM Contact Form Settings</h2>
 					<br />
 					<div class="sugar-free-messageBox" id="message-box" style="display:none;" ><b>Settings Successfully Saved!</b></div>
-					<h3>Database settings</h3>
+					<h3>SugarCRM settings</h3>
 					<div id="dbfields">
 						<table>
 							<tr>
-								<td class="smack_sugar_free_settings_td_label"><label>Sugar Crm URL</label></td>
+								<td class="smack_sugar_free_settings_td_label"><label>SugarCrm URL</label></td>
 								<td><input class="smack_sugar_free_settings_input_text" type="text" id="url"
 									name="url" value="' . $config ['url'] . '" /></td>
 							</tr>
@@ -57,13 +57,6 @@ function wp_sugar_free_plugin_settings() {
 					
 					</table>
 					<div id=sugarsettings>
-						<table>
-							<tr>
-								<td class="smack_sugar_free_settings_td_label"><label>Unique Key</label></td>
-								<td><input class="smack_sugar_free_settings_input_text" type="text" id="appkey"
-									name="appkey" value="' . $config ['appkey'] . '" /></td>
-							</tr>
-						</table>
 						<br />
 						<h3>Capturing WordPress users</h3>
 						<table>

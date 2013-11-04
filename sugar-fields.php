@@ -1,10 +1,10 @@
 <?php
 /**
  * 
- * Function to get sugar fields
+ * Function to get SugarCRM fields
  */
 function wp_sugar_free_fields() {
-
+global $plugin_url_wp_sugar;
 	$config = get_option ( 'smack_wp_sugar_free_settings' );
 
 	if (isset ( $_POST ['url'] )) {
@@ -187,8 +187,8 @@ $content .= '<div class="sugar_free_left-side-content">
 			}
 			$content .= '</td>';			
 			$contentUrl = WP_CONTENT_URL;
-			
-$imagepath = $contentUrl . '/plugins/wp-sugar-free/images/';
+			$imagepath = "{$plugin_url_wp_sugar}/images/";
+
 			$content .= '<td class="smack-sugar-free-field-td-middleit">';
 			if ($typeofdata == 'M') {
 				$content .= '<img src="'.$imagepath.'tick_strict.png"
