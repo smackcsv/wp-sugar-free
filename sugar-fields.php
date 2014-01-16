@@ -9,7 +9,10 @@ global $plugin_url_wp_sugar;
 
 	if (isset ( $_POST ['url'] )) {
 		$config ['username'] = $_POST ['username'];
-		$config ['password'] = $_POST ['password'];
+		if($_POST['password'] != "")
+		{
+			$config ['password'] = $_POST ['password'];
+		}
 		$config ['url'] = $_POST ['url'];
 		$config ['appkey'] = $_POST ['appkey'];
 		update_option ( 'smack_wp_sugar_free_settings', $config );

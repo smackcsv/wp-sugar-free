@@ -2,9 +2,9 @@
 Contributors: smackcoders
 Tags: crm, admin, administration, automatic, contact, form, list, newsletter, plugin, shortcode, sidebar, widget, widgets, wordpress, crm, Sugar, lead, wp Sugar
 Requires at least: 3.4
-Tested up to: 3.5.2
-Stable tag: 1.0.2
-Version: 1.0.2
+Tested up to: 3.8
+Stable tag: 1.0.3
+Version: 1.0.3
 Author: smackcoders
 Donate link: http://www.smackcoders.com/donate.html
 License: GPLv2 or later
@@ -64,6 +64,10 @@ Kindly click here to read more about [WP Sugar Pro features and live demo](http:
 6. The screenshot-6.png shows the form placed in widget area, which captures the SugarCRM leads.
  
 == Changelog ==
+
+= 1.0.3 =
+
+Security measures added on handling SugarCRM credentials
 
 = 1.0.2 =
 

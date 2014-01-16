@@ -14,6 +14,19 @@ function smack_validate_Fields() {
 	return true;
 }
 
+function enableTestSugarCredentials()
+{
+        var str = document.getElementById("password").value;
+        if(str != '')
+        {
+                document.getElementById("Test-Credentials").disabled = false;
+        }
+        else
+        {
+                document.getElementById("Test-Credentials").disabled = true;
+        }
+}
+
 function captureAlreadyRegisteredUsersWpSugarFree() {
 	document.getElementById('please-upgrade').style.fontSize = "14px";
 	document.getElementById('please-upgrade').style.fontFamily = "Sans Serif";

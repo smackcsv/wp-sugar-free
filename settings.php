@@ -9,7 +9,6 @@ function wp_sugar_free_plugin_settings() {
 	
 	if (! isset ( $config_field ['fieldlist'] )) {
 		$content .= '<form class="sugar_free_left-side-content" id="smack_vtlc_form"
-						action="' . $siteurl . '/wp-admin/admin.php?page=wp-sugar-free&action=wp_sugar_free_fields" 
 						method="post">';
 	} else {
 		$content .= '<form class="sugar_free_left-side-content" id="smack_vtlc_form" 
@@ -42,16 +41,16 @@ function wp_sugar_free_plugin_settings() {
 							<tr>
 								<td class="smack_sugar_free_settings_td_label"><label>Password</label>
 								</td>
-								<td><input class="smack_sugar_free_settings_input_text" type="password" id="password"
-									name="password" value="' . $config ['password'] . '" /><br /></td>
+								<td><input class="smack_sugar_free_settings_input_text" type="password" id="password" onblur="enableTestSugarCredentials();" autocomplete="off"  
+									name="password" /><br /></td>
 							</tr>
 						</table>
 					</div>
 					<table>
 						<tr>
 							<td class="smack_sugar_free_settings_td_label"><input type="button"
-								class="button" value="Test connection"
-								onclick="testCredentials(\'' . $siteurl . '\');" /></td>
+								class="button" value="Test connection" id="Test-Credentials"
+								onclick="testCredentials(\'' . $siteurl . '\');" disabled=disabled /></td>
 							<td id="smack-database-test-results"></td>
 						</tr>
 					
@@ -109,10 +108,24 @@ function wp_sugar_free_plugin_settings() {
 }
 
 if (sizeof ( $_POST ) && isset ( $_POST ["smack_vtlc_hidden"] )) {
-	
+	$config = get_option( 'smack_wp_sugar_free_settings' );
+	if(!is_array($config))
+	{
+		$config=Array();
+	}
 	foreach ( $fieldNames as $field => $value ) {
 		if(isset($_POST[$field])){
-			$config [$field] = $_POST [$field];
+			if($field != "password")
+			{
+				$config [$field] = $_POST [$field];
+			}
+			else
+			{
+				if($_POST['password'] != '')
+				{
+					$config [$field] = $_POST [$field];
+				}
+			}
 		}
 	}
 	
