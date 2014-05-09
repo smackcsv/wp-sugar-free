@@ -3,7 +3,7 @@
 *Plugin Name: WP Sugar free
 *Plugin URI: http://www.smackcoders.com
 *Description: Easy Lead capture Sugar Webforms and Contacts synchronization
-*Version: 1.0.3
+*Version: 1.1.0
 *Author: smackcoders.com
 *Author URI: http://www.smackcoders.com
 *
@@ -25,6 +25,9 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 * @link http://www.smackcoders.com/blog/category/free-wordpress-plugins
 ***********************************************************************************************
 */
+
+ini_set("display_errors" , "Off");
+error_reporting(0);
 
 global $plugin_url_wp_sugar ;
 $plugin_url_wp_sugar = plugins_url( '' , __FILE__ );

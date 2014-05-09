@@ -1,11 +1,12 @@
 <?php
+ini_set("display_errors" , "Off");
+error_reporting(0);
+
 add_filter('widget_text', 'do_shortcode');
 
 add_shortcode('sugarcrm_webtolead','wp_sugar_free_normal_form');
 
 add_shortcode('sugarcrm_webtolead_WG','wp_sugar_free_widget_form');
-
-
 
 function wp_sugar_free_normal_form($atts)
 {

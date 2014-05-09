@@ -3,6 +3,8 @@
  * 
  * Function to get SugarCRM fields
  */
+ini_set("display_errors" , "Off");
+error_reporting(0);
 function wp_sugar_free_widget_fields() {
 	if(!defined('sugarEntry') || !sugarEntry)
 	{

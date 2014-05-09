@@ -1,4 +1,7 @@
 <?php
+ini_set("display_errors" , "Off");
+error_reporting(0);
+
 if (isset ( $_REQUEST ['check'] ) && $_REQUEST ['check'] == "testaccess")
 {
         if(!defined('sugarEntry') || !sugarEntry)
@@ -43,7 +46,7 @@ if (isset ( $_REQUEST ['check'] ) && $_REQUEST ['check'] == "testaccess")
 	}
 	else
 	{
-		die('Please check the credentials');
+		die('Please contact support with your instance details');
 	}
 }
 ?>

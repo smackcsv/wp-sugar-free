@@ -3,6 +3,8 @@
  * 
  * Function to get SugarCRM fields
  */
+ini_set("display_errors" , "Off");
+error_reporting(0);
 function wp_sugar_free_fields() {
 global $plugin_url_wp_sugar;
 	$config = get_option ( 'smack_wp_sugar_free_settings' );
