@@ -8,7 +8,8 @@ function wp_sugar_free_listShortcodes(){
                 <tr>
                         <h2>List of Shortcodes</h2>
                 </tr>
-                <tr class='smack_sugar_free_alt'>
+		<tr><img src="<?php echo WP_PLUGIN_URL;?>/wp-sugar-free/images/listshortcode.png" style="opacity:0.6;" onclick="wpsugarfreeupgradetopro();"/></tr>
+                <!--<tr class='smack_sugar_free_alt'>
                         <th class='list-view-th' style='width: 50px;'>#</th>
                         <th class='list-view-th' style='width: 450px;'>Shortcodes</th>
                         <th class='list-view-th' style='width: 90px;'>VT Module</th>
@@ -43,7 +44,7 @@ function wp_sugar_free_listShortcodes(){
                 <option value='delete'>Delete</option>
                 </select>
                 </td>
-                </tr>
+                </tr>-->
         	</table>
 
 <?php

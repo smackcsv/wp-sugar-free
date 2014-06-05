@@ -103,8 +103,8 @@ $content .= '<div class="sugar_free_left-side-content">
                         wpsugarfreesaveSettings();
                         </script>
                 <?php } 
-                        $content .= '<div style="width:20%;float:left;"><h3 class="title">Field settings</h3></div><div style="width:80%;float:right;"><p>( Please use the short code <b> [sugarcrm_webtolead]</b> in page or post )</p></div><br/><br/>
-			<div style="margin-top:10px;">
+                        $content .= '<div style="width:20%;float:left;"><h3 class="title">Field settings</h3></div><br/><br/>
+			<div style="margin-top:10px;"></br>
                         <div style="padding:2px;"><input type="checkbox" id="skipduplicate" onclick="wpsugarfreeupgradetopro()" /> Skip Duplicates. Note: Email should be mandatory and enabled to make this work. </div>
                         <div style="padding:2px;"><input type="checkbox" id="generateshortcode" onclick="wpsugarfreeupgradetopro()" /> Generate this Shortcode for widget form. </div>
                         <div style="padding:2px;">Assign Leads to User: <select id="assignto" onclick="wpsugarfreeupgradetopro()" ><option>Administrator</option><option>Standard User</option></select></div>
@@ -122,10 +122,7 @@ $content .= '<div class="sugar_free_left-side-content">
 			value="Save Mandatory Fields" onclick="wpsugarfreeupgradetopro()" /> <input
 			type="button" class="button-secondary submit-add-to-menu"
 			name="save_display_name" id="save_display_name" value="Save Labels"
-			onclick="wpsugarfreeupgradetopro()" /> <input type="button"
-			class="sugar-free-button-create-shortcode" name="create_shortcode"
-			id="create_shortcode" value="Generate Shortcode"
-			onclick="wpsugarfreeupgradetopro()" /><br/><br/>
+			onclick="wpsugarfreeupgradetopro()" /> <div style="width:80%;"><p>( Please use the short code <b> [sugarcrm_webtolead]</b> in page or post )</p></div>
 		<table class="sugar_free_tableborder">
 			<tr class="smack_sugar_free_alt">
 				<th style="width: 50px;"><input type="checkbox" name="selectall"
@@ -239,11 +236,21 @@ $content .= '<div class="sugar_free_left-side-content">
 				</tr>
 			</tbody>
 		</table>
-		<p>Please use the short code <b> [sugarcrm_webtolead]</b> in page or post</p>
+		<p>(Please use the short code <b> [sugarcrm_webtolead]</b> in page or post)</p>
 		<input type="hidden" name="field_posted"
-			value="posted" />
-
-	</form>
+			value="posted" />';
+ $content .= '<input type="button" class="button-secondary submit-add-to-menu"
+                        name="sync_crm_fields" value="Fetch CRM Fields"
+                        onclick="wpsugarfreeupgradetopro()" />
+                <input type="submit" value="Save Field Settings"
+                        class="button-secondary submit-add-to-menu" name="Submit" />
+                <input type="button" class="button-secondary submit-add-to-menu"
+                        name="make_mandatory" id="make_mandatory"
+                        value="Save Mandatory Fields" onclick="wpsugarfreeupgradetopro()" /> <input
+                        type="button" class="button-secondary submit-add-to-menu"
+                        name="save_display_name" id="save_display_name" value="Save Labels"
+                        onclick="wpsugarfreeupgradetopro()" />';
+	$content .='</form>
 </div>
 <div class="sugar_free_right-side-content" >'.wpsugarfree_rightContent().'                                     
 </div>';
