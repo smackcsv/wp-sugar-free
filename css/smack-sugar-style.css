@@ -1,0 +1,347 @@
+td.smack_sugar_free_settings_td_label {
+width: 190px;
+}
+
+input.smack_sugar_free_settings_input_text {
+width: 300px;
+}
+
+div.sugar_free_right-side-content {
+float: right;
+       padding-right: 20px;
+       margin-top: -70px;
+width: 30%;
+}
+
+div.sugar_free_left-side-content {
+float: left;
+       padding-right: 20px; 
+width: 65%;
+}
+
+form.sugar_free_left-side-content {
+float: left;
+}
+
+table.sugar_free_tableborder{
+border: 1px solid #EEEEEE;
+}
+
+input.wp-sugar-free-widget-area-text {
+border: 1px solid #CCCCCC;
+	background-color: #FFFFFF;
+color: #000000;
+font: 10px verdana, sans-serif;
+padding: 3px 5px;
+width: 176px;
+}
+
+.wp-sugar-free-widget-area-submit {
+background: none repeat scroll 0 0 #E3E3DB;
+	    border-color: #FFFFFF #D8D8D0 #D8D8D0 #FFFFFF;
+	    border-style: solid;
+	    border-width: 2px;
+color: #000000;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 10px;
+       font-weight: bold;
+       margin-left: 0;
+       text-decoration: none;
+       text-transform: uppercase;
+}
+
+.sugar_free_upgradetopro {
+color: red;
+       font-weight: bold;
+       text-align: center;
+}
+
+.smack-sugar-free-settings-text {
+width: 300px;
+}
+
+.smack-sugar-free-field-td-middleit {
+	text-align: center;
+}
+
+.smack_field_error {
+color: red;
+height: 40px;
+}
+
+.smack_sugar_free_widget_buttons {
+background: none repeat scroll 0 0 #E3E3DB;
+	    border-color: #FFFFFF #D8D8D0 #D8D8D0 #FFFFFF;
+	    border-style: solid;
+	    border-width: 2px;
+color: #000000;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 10px;
+       font-weight: bold;
+       margin-left: 0;
+       text-decoration: none;
+       text-transform: uppercase;
+}
+
+.smack_sugar_free_alt
+{
+	background-color:#F9F9F9;
+}
+
+input.readonly-text{
+	background-color: #F8F8F8;
+}
+
+.smack_sugar_free_highlight:hover
+{
+	background-color:#CCCCCC;
+}
+
+.smack-sugar-free-field-td-middleit > img, .smack_sugar_free_pointer > img {
+cursor: pointer;
+}
+
+.sugar-free-top-navigation-wrapper
+{
+width:65%;
+      border-bottom: 2px solid #BCD5E1;
+display: block;
+height: 27px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	padding-bottom: 9px;
+}
+
+#sugar-free-top-navigation ul {
+	list-style: none outside none;
+margin: -8px;
+padding: 0;
+}
+
+#sugar-free-top-navigation li {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #BCD5E1;
+	border-image: none;
+	border-radius: 6px 6px 0 0;
+	border-style: solid;
+	border-width: 2px 2px 0;
+float: left;
+       margin-left: 8px;
+}
+
+.sugar-free-nav-menu-link
+{
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+background: none repeat scroll 0 0 #E8F1F5;
+color: #103A4D;
+display: block;
+padding: 0.75em 1em;
+	 text-align: center;
+	 text-decoration: none;
+}
+
+.sugar-free-nav-menu-link:hover
+{
+	background-color : #D2E3EB;
+	text-decoration: none;
+color: #103A4D;
+}
+
+.sugar-free-navigation-menu-link-active {
+	background-color: #FFFFFF;
+	border-bottom: 2px solid #FFFFFF;
+color: #103A4D;
+       font-weight: bold;
+       text-decoration: none;
+}
+
+.sugar-free-navigation-menu-link-active:hover
+{
+	background-color: #FFFFFF;
+color: #103A4D;
+}
+.sugar-free-navigation-menu
+{
+float: left;
+}
+
+.sugar-free-button-create-shortcode
+{
+background: none repeat scroll 0 0 #D82133;
+	    box-shadow: 0 1px 4px #A9A7A7;
+color: #FFFFFF;
+       text-decoration: none;
+       font-weight: bold;
+       text-align: center;
+       text-transform: uppercase;
+       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+#wpsugarfree-pluginDetails h3 {
+	background-color: #F1F1F1;
+	font-size: medium;
+	font-style: oblique;
+	font-weight: bold;
+padding: 7px;
+}
+
+.sugar-free-messageBox{
+	text-align: center;
+color:#287928;
+}
+
+.wpsugarfree-plugindetail-box {
+	font-weight: normal;
+	line-height: 1;
+}
+
+.wpsugarfree-plugin-details {
+height: 130px;
+}
+
+.wpsugarfree-box-inside {
+border: 1px solid #EEEEEE;
+	line-height: 1.5;
+	margin-top: -14px;
+padding: 10px;
+}
+
+.wpsugarfree-rateus {
+width: 25%;
+}
+
+.sugar-free-sociallinks {
+float: right;
+       margin-top: -63px;
+}
+
+.sugar-free-poweredby {
+float: right;
+       margin-top: -30px;
+}
+
+
+/*      Navigation menu css     */
+
+.nav-pills-div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
+}
+
+.nav:after {
+  clear: both;
+}
+
+.nav:before,
+.nav:after {
+  display: table;
+  content: " ";
+}
+
+.nav:after {
+  clear: both;
+}
+
+.nav > li {
+  position: relative;
+  display: block;
+}
+
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+text-decoration: none;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.nav > li.disabled > a {
+  color: #999999;
+}
+
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #999999;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  background-color: #eeeeee;
+  border-color: #428bca;
+}
+.nav .nav-divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}
+
+.nav > li > a > img {
+  max-width: none;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #dddddd;
+}
+
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+
+.nav-tabs > li > a {
+    border: 1px solid transparent;
+    background-color: #F9F9F9;
+    border-color: #C5D0DC;
+    border-radius: 0 0 0 0 !important;
+    color: #999999;
+    line-height: 16px;
+    margin-right: -1px;
+    position: relative;
+    z-index: 11;
+}
+
+.nav-tabs > li > a:hover {
+        color:#4C8FBD;
+        background-color: #FFFFFF;
+        border-color: #C5D0DC;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    background-color: #FFFFFF;
+    border-color: #4C8FBD #C5D0DC transparent;
+    border-top: 2px solid #4C8FBD;
+    box-shadow: 0 -2px 3px 0 rgba(0, 0, 0, 0.15);
+    color: #576373;
+    line-height: 16px;
+    margin-top: -1px;
+    z-index: 12;
+}
+
