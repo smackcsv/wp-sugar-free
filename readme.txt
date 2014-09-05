@@ -2,7 +2,7 @@
 Contributors: smackcoders
 Tags: crm, admin, administration, automatic, contact, form, list, newsletter, plugin, shortcode, sidebar, widget, widgets, wordpress, crm, Sugar, lead, wp Sugar, sugar crm, sugar leads, sugar crm integration, wordpress crm, lead capture, form generator, form builder, contact sync, vtigercrm, optin form, form
 Requires at least: 3.5
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: 1.1.1
 Version: 1.1.1
 Author: smackcoders
