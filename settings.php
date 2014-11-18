@@ -88,7 +88,18 @@ function wp_sugar_free_plugin_settings() {
 					</tr>-->
 					
 					</table>
-					
+					<table>
+					<tr class="databorder"><td>
+					<h3 id="innertitle">Debug Mode</h3>
+					<div style="float: left"><label>You can enable/disable the debug mode.</label></div>
+					<div style="float: right; padding-left: 28px;">: <input type="checkbox" class="smack-sugar-settings-debug" name="wp_sugar_free_smack_debug" id="wp_sugar_free_smack_debug"';
+	if ($config ['wp_sugar_free_smack_debug'] == 'on') {
+		$content .= "checked";
+	}
+	$content .= ' />
+					</div>
+					</td></tr>
+					</table>
 					</div>
 					<input type="hidden" name="posted" value="Posted">
 					<p class="submit">
@@ -106,7 +117,6 @@ function wp_sugar_free_plugin_settings() {
 	echo $content;
 //	echo rightSideContent ();
 }
-
 if (sizeof ( $_POST ) && isset ( $_POST ["smack_vtlc_hidden"] )) {
 	$config = get_option( 'smack_wp_sugar_free_settings' );
 	if(!is_array($config))
@@ -128,7 +138,11 @@ if (sizeof ( $_POST ) && isset ( $_POST ["smack_vtlc_hidden"] )) {
 			}
 		}
 	}
-	
+	if(isset($_POST['wp_sugar_free_smack_debug']) && $_POST['wp_sugar_free_smack_debug'] == 'on') {
+		$config ['wp_sugar_free_smack_debug'] = 'on';
+	} else {
+		$config ['wp_sugar_free_smack_debug'] = 'off';
+	}
 	update_option ( 'smack_wp_sugar_free_settings', $config );
 }
 

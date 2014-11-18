@@ -3,8 +3,8 @@ Contributors: smackcoders
 Tags: crm, admin, administration, automatic, contact, form, list, newsletter, plugin, shortcode, sidebar, widget, widgets, wordpress, crm, Sugar, lead, wp Sugar, sugar crm, sugar leads, sugar crm integration, wordpress crm, lead capture, form generator, form builder, contact sync, vtigercrm, optin form, form
 Requires at least: 3.5
 Tested up to: 4.0
-Stable tag: 1.1.1
-Version: 1.1.1
+Stable tag: 1.1.11
+Version: 1.1.11
 Author: smackcoders
 Donate link: http://www.smackcoders.com/donate.html
 License: GPLv2 or later
@@ -13,7 +13,9 @@ An easy and advanced SugarCRM webform generator for Wordpress to capture leads. 
 
 == Description ==
 
-Version 1.1.1 is available with minor bug fixes and usability changes. CRM Sugar Wordpress Form Builder For Contacts and Lead Capture or WP Sugar CRM plugin is now fully automated to fetch and generate a web form from sugar crm fields. It is never easy before to make, edit, alter, control & manage web forms for sugar crm. Just few simple steps and clicks, one time set up, set it and forget features reduces ton of time and pain of creating manual html sugar forms. No need to worry about missing a single lead capture in future.
+= [WP Sugar Free](https://wordpress.org/plugins/wp-sugar-free/) plugin is now part of [WP Leads Builder For Any CRM](https://wordpress.org/plugins/wp-leads-builder-any-crm), a combined plugins for all CRM like [wp tiger](https://wordpress.org/plugins/wp-tiger/), [wp sugar free](https://wordpress.org/plugins/wp-sugar-free/), [wp zoho](https://wordpress.org/plugins/wp-zoho-crm/) plugins with more features. Users are advised to download the new plugins no future updates or support will be available for this plugin. =
+
+Version 1.1.11 is available with debug mode enable and disable options in settings along with menu changes. CRM Sugar Wordpress Form Builder For Contacts and Lead Capture or WP Sugar CRM plugin is now fully automated to fetch and generate a web form from sugar crm fields. It is never easy before to make, edit, alter, control & manage web forms for sugar crm. Just few simple steps and clicks, one time set up, set it and forget features reduces ton of time and pain of creating manual html sugar forms. No need to worry about missing a single lead capture in future.
 
 = Video Walkthrough =
 
@@ -94,6 +96,11 @@ Kindly click here to read more about [WP Sugar Pro features and live demo](http:
  
 == Changelog ==
 
+= 1.1.11 = 
+- Features moved to new combined plugin [Leads Builder For Any CRM](https://wordpress.org/plugins/wp-leads-builder-any-crm) 
+- Added: Debug mode enable/disable options.
+- Modified: Menu order changes.
+
 = 1.1.1 =
 - Minor bug fix
 - UI Improvements
@@ -122,6 +129,10 @@ This is Initial basic version. Written over wp-tiger
 
 
 == Upgrade Notice ==
+
+= 1.1.11=
+
+Now users are advised to migrate to new plugin with more features. 
 
 = 1.1.1 =
 

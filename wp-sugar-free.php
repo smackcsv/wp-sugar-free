@@ -3,7 +3,7 @@
 *Plugin Name: WP Sugar free
 *Plugin URI: http://www.smackcoders.com
 *Description: Easy Lead capture Sugar Webforms and Contacts synchronization
-*Version: 1.1.1
+*Version: 1.1.11
 *Author: smackcoders.com
 *Author URI: http://www.smackcoders.com
 *
@@ -26,8 +26,11 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 ***********************************************************************************************
 */
 
-ini_set("display_errors" , "Off");
-error_reporting(0);
+$config = get_option( 'smack_wp_sugar_free_settings' );
+if($config['wp_sugar_free_smack_debug'] != 'on') {
+	ini_set("display_errors" , "Off");
+	error_reporting(0);
+}
 
 global $plugin_url_wp_sugar ;
 $plugin_url_wp_sugar = plugins_url( '' , __FILE__ );
@@ -57,7 +60,8 @@ require_once 'pro-features.php';
 
 add_action ( 'admin_enqueue_scripts', 'LoadWpSugarFreeScript' );
 add_action ( "admin_menu", "wpsugarfree" );
-add_action( 'user_register', 'wp_sugar_free_capture_registering_users' );
+add_action ( 'user_register', 'wp_sugar_free_capture_registering_users' );
+add_action ( 'after_plugin_row_wp-sugar-free/wp-sugar-free.php', 'plugin_row' );
 
 register_deactivation_hook( __FILE__, 'wpsugarfree_deactivate' );
 
@@ -65,6 +69,27 @@ register_deactivation_hook( __FILE__, 'wpsugarfree_deactivate' );
 function wpsugarfree() {
 	global $plugin_url_wp_sugar;
 	add_menu_page('WPSugarFree Settings', 'WP Sugar Free', 'manage_options', 'wp-sugar-free', 'wpsugarfree_settings', "{$plugin_url_wp_sugar}/images/icon.png");
+}
+
+// Move Pages above Media
+function smacksugarfree_change_menu_order( $menu_order ) {
+   return array(
+       'index.php',
+       'edit.php',
+       'edit.php?post_type=page',
+       'upload.php',
+       'wp-sugar-free',
+   );
+}
+add_filter( 'custom_menu_order', '__return_true' );
+add_filter( 'menu_order', 'smacksugarfree_change_menu_order' );
+
+/*
+ * Function to get the plugin row
+ * @$plugin_name as string
+ */
+function plugin_row($plugin_name){
+	echo '</tr><tr class="plugin-update-tr"><td colspan="3" class="plugin-update"><div class="update-message"> Please migrate to our new plugin <a href="https://wordpress.org/plugins/wp-leads-builder-any-crm/" target="blank" >Leads Builder For Any CRM</a> for advanced features.</div></td>';
 }
 
 function LoadWpSugarFreeScript() {
