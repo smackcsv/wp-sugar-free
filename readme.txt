@@ -13,7 +13,7 @@ An easy and advanced SugarCRM webform generator for Wordpress to capture leads. 
 
 == Description ==
 
-= [WP Sugar Free](https://wordpress.org/plugins/wp-sugar-free/) plugin is now part of [WP Leads Builder For Any CRM](https://wordpress.org/plugins/wp-leads-builder-any-crm), a combined plugins for all CRM like [wp tiger](https://wordpress.org/plugins/wp-tiger/), [wp sugar free](https://wordpress.org/plugins/wp-sugar-free/), [wp zoho](https://wordpress.org/plugins/wp-zoho-crm/) plugins with more features. Users are advised to download the new plugins no future updates or support will be available for this plugin. =
+[WP Sugar Free](https://wordpress.org/plugins/wp-sugar-free/) plugin is now part of [WP Leads Builder For Any CRM](https://wordpress.org/plugins/wp-leads-builder-any-crm), a combined plugins for all CRM like [wp tiger](https://wordpress.org/plugins/wp-tiger/), [wp sugar free](https://wordpress.org/plugins/wp-sugar-free/), [wp zoho](https://wordpress.org/plugins/wp-zoho-crm/) plugins with more features. Users are advised to download the new plugins no future updates or support will be available for this plugin.
 
 Version 1.1.11 is available with debug mode enable and disable options in settings along with menu changes. CRM Sugar Wordpress Form Builder For Contacts and Lead Capture or WP Sugar CRM plugin is now fully automated to fetch and generate a web form from sugar crm fields. It is never easy before to make, edit, alter, control & manage web forms for sugar crm. Just few simple steps and clicks, one time set up, set it and forget features reduces ton of time and pain of creating manual html sugar forms. No need to worry about missing a single lead capture in future.
 
