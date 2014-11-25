@@ -49,8 +49,7 @@ Short code can be used in page, post or widget as a contact/capture form to conv
 
 [Wiki and Documentation](http://wiki.smackcoders.com/WP_Sugar_Integration_Automated_Multi_Webform_Generator)
 
-[Video Walkthrough](https://www.youtube.com/watch?v=DnpjFvfAGvc&list=PL2k3Ck1bFtbRSNhSz5pH2i1jJr12uiexb)<br/>
-
+[Video Walkthrough](https://www.youtube.com/watch?v=DnpjFvfAGvc&list=PL2k3Ck1bFtbRSNhSz5pH2i1jJr12uiexb)
 
 Pro Version Features
 - Unlimited Forms with different field set
