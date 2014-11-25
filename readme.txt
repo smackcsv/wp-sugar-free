@@ -45,8 +45,10 @@ Short code can be used in page, post or widget as a contact/capture form to conv
 = Helpful Links +
 
 
-[Get Pro Power Features, check here](http://www.smackcoders.com/crm-sugar-wordpress-form-builder-for-contacts-and-lead-capture-unlimited.html)<br/>
-[Wiki and Documentation](http://wiki.smackcoders.com/WP_Sugar_Integration_Automated_Multi_Webform_Generator)<br/>
+[Get Pro Power Features, check here](https://www.smackcoders.com/store/crm-sugar-wordpress-form-builder-for-contacts-and-lead-capture-unlimited.html)
+
+[Wiki and Documentation](http://wiki.smackcoders.com/WP_Sugar_Integration_Automated_Multi_Webform_Generator)
+
 [Video Walkthrough](https://www.youtube.com/watch?v=DnpjFvfAGvc&list=PL2k3Ck1bFtbRSNhSz5pH2i1jJr12uiexb)<br/>
 
 
@@ -71,7 +73,8 @@ With many inbuilt advanced features users can pull crm sugar fields from leads a
     No need to switch interface, just do it from WP Admin
     Widget form is useful to show your forms in any of your widget area like site wide side bar for increased visibility. The pro version uses the safest crm sugar web services api to connect and communicate with Wordpress.
  
-Kindly click here to read more about [WP Sugar Pro features and live demo](http://www.smackcoders.com/wordpress-sugar-integration-automated-multi-web-forms-creator-pro.html)
+Kindly click here to read more about 
+[WP Sugar Pro features and live demo](https://www.smackcoders.com/store/crm-sugar-wordpress-form-builder-for-contacts-and-lead-capture-unlimited.html)
 
 
 == Installation ==
